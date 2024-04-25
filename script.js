@@ -48,9 +48,6 @@ submitBtn.addEventListener("click", (event) => {
     createBoard();
   });
 
-
-
-
 container.addEventListener("click", (event) => {
  
     const isGameButton = event.target.classList.contains("game-button");
