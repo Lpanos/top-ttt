@@ -9,26 +9,49 @@
 </head>
 <body>
     <div class="container">
+        <div class="modal modal-hidden" id="modal"></div>
+        <dialog>
+            <form action="#" method="post" id="start-form">
+                <fieldset>
+                    <legend>Player Info:</legend>
+                
+                <div class="form-element">
+                    <label for="playerOneName">Player 1 Name (X):</label>
+                    <input type="text" name="playerOneName" id="playerOneName" required>
+                </div>
+
+                <div class="form-element">
+                    <label for="playerTwoName">Player 2 Name (O):</label>
+                    <input type="text" name="playerTwoName" id="playerTwoName" required>
+                </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Starting Player:</legend>
+                
+                <div class="form-element">
+                    <label for="playerOneStarts">Player 1</label>
+                    <input type="radio" name="playerStart" id="playerOneStarts" value="playerOneStarts"checked>
+                </div>
+
+                <div class="form-element">
+                    <label for="playerTwoStarts">Player 2</label>
+                    <input type="radio" name="playerStart" id="playerTwoStarts" value="playerTwoStarts">
+                </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Lock-In:</legend>
+                <button type="submit" id="submitBtn">Start Game</button>
+                </fieldset>
+            </form>
+        </dialog>
+
         <div class="title">Tic-Tac-Toe</div>
         <div class="game">
-            <div class="game-board">
-                <div class="game-square"><button class="game-button" id="0"></button></div>
-                <div class="game-square"><button class="game-button" id="1"></button></div>
-                <div class="game-square"><button class="game-button" id="2"></button></div>
-                <div class="game-square"><button class="game-button" id="3"></button></div>
-                <div class="game-square"><button class="game-button" id="4"></button></div>
-                <div class="game-square"><button class="game-button" id="5"></button></div>
-                <div class="game-square"><button class="game-button" id="6"></button></div>
-                <div class="game-square"><button class="game-button" id="7"></button></div>
-                <div class="game-square"><button class="game-button" id="8"></button></div>
-            </div>
-            <div class="label">Score:
+            <div class="game-board"></div>
                 <div class="game-score">
-                    <div class="pad"></div>
-                    <div class="xScore score-num">0</div>
-                    <div class="oScore score-num">0</div>
-                    <div class="pad"></div>
-                </div>
             </div>
         </div>
     </div>
